@@ -69,6 +69,9 @@ configure(subprojects.findAll { !it.name.endsWith('-biz') && it.name != 'common'
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-validation'
         // data
+        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+
         implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
         // JWT
         implementation 'org.springframework.boot:spring-boot-starter-security'
