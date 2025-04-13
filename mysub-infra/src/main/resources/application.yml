@@ -39,3 +39,18 @@ logging:
   level:
     com.unicorn: DEBUG
     org.hibernate.SQL: TRACE
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
