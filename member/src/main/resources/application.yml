@@ -35,6 +35,7 @@ logging:
   level:
     com.unicorn: DEBUG
     org.hibernate.SQL: TRACE
+
 # Actuator 설정
 management:
   endpoints:
