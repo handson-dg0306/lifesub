@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysub-configmap
+data:
+  SPRING_PROFILES_ACTIVE: "prod"
+  POSTGRES_HOST: "postgres-mysub-postgresql"
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: mysub
+  POSTGRES_USER: admin
+  LOG_LEVEL: "DEUG"
+  ALLOWED_ORIGINS: "http://20.249.133.81"
